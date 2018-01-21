@@ -23,7 +23,7 @@ class Album:
         tracks (List[Song]): A list of the songs of the album.
 
         Methods:
-            add_song: Used to add a new song to the album trac klist.
+            add_song: Used to add a new song to the album tracklist.
 
         """
 

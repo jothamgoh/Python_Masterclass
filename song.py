@@ -23,7 +23,7 @@ class Album:
         tracks (List[Song]): A list of the songs of the album.
 
         Methods:
-            add_song: Used to add a new song to the album trac klist.
+            add_song: Used to add a new song to the album tracklist.
 
         """
 
@@ -105,28 +105,27 @@ def load_data():
                 # We have just read details on a new artist collection
                 # retrieve artist object if there is one,
                 # otherwise create a new artist object and add it to the artist list.
-                new_artist.add_album(new_album)
-
-                new_artist = Artist(artist_field)
+                new_artist = find_object(artist_field, artist_list)
+                if new_artist is None:
+                    new_artist = Artist(artist_field)
+                    artist_list.append(new_artist)
                 new_album = None
 
             if new_album is None:
                 new_album = Album(album_field, year_field, new_artist)
+                new_artist.add_album(new_album)
             elif new_album.name != album_field:
                 # We've just read new album for the current artist
-                # store the current album in the artist collection and create new album object
-                new_artist.add_album(new_album)
-                new_album = Album(album_field, year_field, new_artist)
+                # Retrieve the album object if there is one,
+                # Otherwise create the new album object and store in the artist's collection.
+                new_album = find_object(album_field, new_artist.albums)
+                if new_album is None:
+                    new_album = Album(album_field, year_field, new_artist)
+                    new_artist.add_album(new_album)
 
             # Create new song object and add to the current albums collection
             new_song = Song(song_field, new_artist)
             new_album.add_song(new_song)
-
-        # After reading the last line of the text file, there will be artist and album that have not been stored - process that
-        if new_artist is not None:
-            if new_album is not None:
-                new_artist.add_album(new_album)
-            artist_list.append(new_artist)
 
     return artist_list
 

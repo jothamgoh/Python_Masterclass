@@ -216,6 +216,9 @@ ZZ Top	Antenna	1994	Cover Your Rig
 ZZ Top	Antenna	1994	Lizard Life
 ZZ Top	Antenna	1994	Deal Goin' Down
 ZZ Top	Antenna	1994	Everything
+<<<<<<< HEAD
+>>>>>>> 04ca3694bb3b581991136aee402f8497d301104c
+=======
 >>>>>>> 04ca3694bb3b581991136aee402f8497d301104c
 ZZ Top	Rio Grande Mud	1972	Francine
 ZZ Top	Rio Grande Mud	1972	Just Got Paid
@@ -277,7 +280,10 @@ ZZ Top	Mescalero	2003	Crunchy
 ZZ Top	Mescalero	2003	Dusted
 ZZ Top	Mescalero	2003	Liquor
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 04ca3694bb3b581991136aee402f8497d301104c
 Alice Cooper	Welcome To My Nightmare	1975	Welcome To My Nightmare
 Alice Cooper	Welcome To My Nightmare	1975	Devil's Food
 Alice Cooper	Welcome To My Nightmare	1975	The Black Widow
@@ -687,4 +693,7 @@ Yngwie Malmsteen	Rising Force	1984	Icarus Dream Suite Opus 4
 Yngwie Malmsteen	Rising Force	1984	As Above So Below
 Yngwie Malmsteen	Rising Force	1984	Little Savage
 Yngwie Malmsteen	Rising Force	1984	Farewell
+<<<<<<< HEAD
+>>>>>>> 04ca3694bb3b581991136aee402f8497d301104c
+=======
 >>>>>>> 04ca3694bb3b581991136aee402f8497d301104c
